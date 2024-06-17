@@ -246,9 +246,43 @@ span{
         85%{
             width: calc(100% + 8px);
         }
+}
 
+@media(max-width:1024px){
+        body{
+            font-size: 10px;
+        }
+        .container{
+            width: 100%;
+            height: auto;
+        
+        }
+        .social-icon{
+            padding-left: 38% ;
+        }
+        .card{
+            display: grid;
+           }
+       
+}
+@media (max-width: 768px){
+    .card{
+     display: block;
+    }
+}
+@media (max-width: 431px){
+    .card{
+     display: block;
+    }
+    .social-icon{
+        width: 20px;
+    }
+   .logo img{
+    width: 50px;
+   }
 
 
 }
+
 
 
