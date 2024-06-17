@@ -1,0 +1,27 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
+}
+
+.cv iframe {
+    width: 45%;
+    height: 100%;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.cv1, .cv2 {
+    height: 100%;
+}
