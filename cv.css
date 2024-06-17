@@ -5,31 +5,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; 
     background-color: #f0f0f0;
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    max-width: 800px;
     width: 90%; 
-    max-width: 1200px; 
-}
-
-.cv {
-    display: flex;
-    gap: 2%; 
-    width: 100%;
-    justify-content: center;
-}
-
-.cv img {
-    width: 48%; 
-    height: auto; 
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box; 
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
 }
