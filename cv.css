@@ -1,27 +1,35 @@
-body, html {
-    height: 100%;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 90%; 
+    max-width: 1200px; 
 }
 
 .cv {
     display: flex;
-    align-items: center;
+    gap: 2%; 
+    width: 100%;
     justify-content: center;
-    height: 90%;
-    width: 90%;
 }
 
-.cv iframe {
-    width: 45%;
-    height: 100%;
-    margin: 0 10px;
-    overflow: hidden;
-}
-
-.cv1, .cv2 {
-    height: 100%;
+.cv img {
+    width: 48%; 
+    height: auto; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
 }
