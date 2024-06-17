@@ -1,0 +1,254 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins" ,sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   /* background:url(picture/14dd8157329154fcdef0abf5a7621629.jpg)  */
+   background-color: #080808;
+}
+:root{
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: #fff;
+    --main-color: #F08A5D;
+}
+.container {
+    text-align: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+.container h1,h3,p{
+    color: #fff;
+    display: center;
+    font-size: xx-large;
+
+}
+span{
+    color: rgb(174,156,96);
+}
+
+.container h3,p{
+    color: #fff;
+    display: center;
+    font-size: large;
+
+}
+
+
+.card {
+    position:relative;
+    width: 190px;
+    height: 254px;
+    background-color: var(--bg-color);
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px ;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin:30px 20px;
+
+  }
+ 
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 200px;
+    height: 264px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, rgb(174,156,96) 0%, #fff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, rgb(174,156,96) 0%, #fff  100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  
+  .card p:not(.heading) {
+    font-size: 14px;
+  }
+  
+  .card p:last-child {
+    color: #e81cff;
+    font-weight: 600;
+  }
+  
+  .card:hover::after {
+    filter: blur(30px);
+  }
+  
+  .card:hover::before {
+    transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+  }
+  
+.card-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.button1, .button a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(174,156,96) ;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button1:hover {
+    background-color: white;
+    color: rgb(174,156,96) ;
+}
+
+.button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.button a {
+    color: inherit;
+    text-decoration: none;
+}
+.Title{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    position: grid;
+    padding: 35%;
+    padding-bottom: 100px;
+}
+.social-icon{
+    padding-left: 42%;
+}
+.social-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: transparent;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, rgb(174,156,96) 0%, rgb(181,161,100) 100% );
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 300ms ease-in-out;
+    color: white;
+    
+}
+.social-icon a:hover{
+    color: var(--text-color);
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: 0 0 25px var(--text-color);
+    background: linear-gradient(-45deg, rgb(174,156,96) 0%, rgb(181,161,100) 100% );
+}
+.logo{
+    display:grid;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 46%;
+}
+.logo img{
+    width: 20%;
+    
+}
+.text-animation{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.text-animation span{
+    position: relative;
+}
+
+.text-animation span::before{
+    content: "";
+    color:rgb(174,156,96);
+    animation: words 20s infinite;
+}
+.text-animation span::after{
+    content: "";
+    color: var(--bg-color);
+    height: 100%;
+    width: calc(100% + 8px);
+    position: absolute;
+    right: -8px;
+    border-left: 3px solid var(--bg-color);
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor{
+    to{
+        border-left: 2px solid rgb(174,156,96);
+    }
+}
+@keyframes words{
+    0%, 50%{
+        content: " INTERIOR DESIGN GRADUATE";
+    }
+    51%, 100%{
+        content: " DE MONTFORT UNIVERSITY";
+    }
+}
+@keyframes typing{
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+      }
+        5%,
+        20%,
+        25%,
+        40%,
+        45%,
+        60%,
+        65%,
+        80%,
+        85%{
+            width: calc(100% + 8px);
+        }
+
+
+
+}
+
+
